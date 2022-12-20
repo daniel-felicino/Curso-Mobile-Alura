@@ -13,6 +13,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 .container{
 
@@ -24,4 +25,38 @@
 
     padding: 1rem;
 
+}
+.lista__menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 222px;
+}
+.container_botao:checked ~ .lista__menu{
+
+    display: block;
+    
+    /* Agora quando eu clico aparece a lista e quando eu clico novamente some com ela.
+     Então eu botei um .container, no botão, selecionou o input, eu botei :checked, 
+     esse checked é uma pseudo classe. Ela detecta se está preenchida aquele input checkbox.
+ E depois eu botei um acento ~, aquilo é chamado combinador CSS. 
+ Um combinador CSS desse aqui, do acento ~, ele vai procurar um outro elemento que vem em seguida 
+ daquele de antes, que tem aquela classe que eu botei depois. */
+} 
+#menu{
+    display: none;
+}
+.lista__menu__titulo{
+text-transform: uppercase;
+    color: var(--laranja);
+}
+.lista__menu__item{
+    text-transform: uppercase;
+
+    color: var(--azul);
+}
+.lista__menu__titulo,.lista__menu__item{
+
+    padding: 1rem;
+    background-color: var(--branco);
 }
