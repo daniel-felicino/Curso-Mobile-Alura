@@ -1,0 +1,108 @@
+.banner2 {
+  height: 295px;
+  width: 324px;
+  left: 24px;
+  top: 344px;
+  border-radius: 10px;
+  background: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 10px;
+  box-shadow: 0px 3px 4px rgb(50 50 50 / 77%);
+}
+.banner2,
+.icones {
+  display: grid;
+  margin: 1em;
+  padding: 1em;
+  grid-template-columns: 1fr 1fr;
+}
+
+.icones h1 {
+  grid-column: span 2;
+  color: #eb9b00;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: var(--fonte-principal);
+}
+.icones h2 {
+  grid-column: span 2;
+  color: #002f52;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: var(--fonte-principal);
+}
+
+.icones p {
+  grid-column: span 2;
+  color: #000000 85%;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: var(--fonte-principal);
+}
+.icones a {
+  color: #000000 85%;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: var(--fonte-principal);
+  text-align: center;
+}
+.icones2 button {
+  background-color: var(--laranja);
+  color: var(--branco);
+  border: none;
+  width: 161px;
+  height: 48px;
+  padding: 8px, 16px, 8px, 16px;
+  /* gap: 10px; */
+  margin-top: 8px;
+}
+.icones2 {
+  display: grid;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-content: center;
+}
+.icones .links {
+  grid-column: span 2;
+}
+.icones .links .mochila {
+  margin-left: 30px;
+}
+
+.bannerfinal {
+  background: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
+  height: 295px;
+}
+.bannerfinal h1 {
+  padding: 24px;
+  color: white;
+  font-weight: 300;
+  font-size: 16px;
+  text-align: center;
+  font-family: var(--fonte-principal);
+}
+
+.containerlinks a {
+  color: white;
+  background-color: var(--laranja);
+  width: 110px;
+  height: 53px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.containerlinks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 12px;
+  gap: 10px;
+}
+.containerlinks .fundo{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column: span 2;
+  gap: 15px;
+  margin-left: 82px;
+}

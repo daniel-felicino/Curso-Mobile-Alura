@@ -5,7 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Roboto+Condensed&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css">
 
     <title>Curso Mobile Alura</title>
@@ -14,11 +21,9 @@
 <body>
     <header class="cabecalho">
         <div class="container">
-            <input type="checkbox" id="menu" class="container_botao">
-            <label for="menu">
-                <span class="cabecalho_menu_hamburguer containerImg"></span>
-            </label>
-            <ul class="lista__menu">
+
+            <area shape="rect" id="menu" class="container_botao cabecalho_menu_hamburguer containerImg">
+            <ul class="lista__menu" id="listaMenu">
                 <li class="lista__menu__titulo">Categorias</li>
                 <li class="lista__menu__item">
                     <a href="#" class="lista__menu__link"></a>Programação
@@ -44,6 +49,116 @@
             <a href="#"><img class="containerImg" src="img/Usuario.svg" alt="Usuario"></a>
         </div>
     </header>
+    <section class="banner">
+        <h2 class="titulo-banner">
+            Já sabe por onde começar?</h2>
+        <p class="texto-banner"> Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+        <input type="search" class="banner-pesquisa" placeholder="Qual será sua próxima leitura?">
+    </section>
+    <secticon class="carrossel">
+        <h1 class="carrossel-titulo">Novos Lançamentos</h1>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <div class="swiper-pagination"></div>
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="./img/ApacheKafka.png"></div>
+                <div class="swiper-slide"><img src="./img/Construct2.png"></div>
+                <div class="swiper-slide"><img src="./img/Gestão2.png"></div>
+                <div class="swiper-slide"><img src="./img/Liderança.png"></div>
+                <div class="swiper-slide"><img src="./img/Javascript.png"></div>
+                <div class="swiper-slide"><img src="./img/Portugol.png"></div>
+
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </secticon>
+    <section class="banner2">
+
+        <div class="icones">
+            <h1>Talvez você também se interesse por...</h1>
+            <h2>Angular 11 e Firebase</h2>
+            <p>Construindo uma aplicação integrada com a plataforma do Google.</p>
+            <div class="links">
+                <a href="#"> <img class="coracao" src="img/Favoritos.svg" alt="Favoritos"></a>
+                <a href="#"><img class="mochila" src="img/Compras.svg" alt="Compras"></a>
+            </div>
+        </div>
+        <div class="icones2">
+            <img src="./img/Perfil-escritora 2.png">
+            <button> Saiba Mias</button>
+        </div>
+    </section>
+    <secticon class="carrossel">
+        <h1 class="carrossel-titulo">MAIS VENDIDOS</h1>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <div class="swiper-pagination"></div>
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="./img/ApacheKafka.png"></div>
+                <div class="swiper-slide"><img src="./img/Construct2.png"></div>
+                <div class="swiper-slide"><img src="./img/Gestão2.png"></div>
+                <div class="swiper-slide"><img src="./img/Liderança.png"></div>
+                <div class="swiper-slide"><img src="./img/Javascript.png"></div>
+                <div class="swiper-slide"><img src="./img/Portugol.png"></div>
+
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </secticon>
+    <section class="banner2">
+
+        <div class="icones">
+            <h1>Autora do Mês</h1>
+            <h2>Juliana Agarikov</h2>
+            <p>Analista de sistemas e escritora, Juliana é especialista em Front-End. </p>
+            <div class="links">
+                <a href="#"> <img class="coracao" src="img/Favoritos.svg" alt="Favoritos"></a>
+                <a href="#"><img class="mochila" src="img/Compras.svg" alt="Compras"></a>
+            </div>
+        </div>
+        <div class="icones2">
+            <img src="./img/Perfil-escritora 1.png">
+            <button> Saiba Mias</button>
+        </div>
+    </section>
+
+    <section class="bannerfinal">
+        <h1>TÓPICOS VISITADOS RECENTEMENTE</h1>
+        <div class="containerlinks">
+            <a style="width: 108px;">Android</a>
+            <a style="width: 166px;margin-left: -9px;">Marketing Digital</a>
+            <a style="width: 71px;">Agile</a>
+            <a style="width: 99px;margin-left: 19px;" >Startups</a>
+            <a style="width: 136px;margin-left: 1px;">HTML & CSS</a>
+            <a style="width: 80px;margin-left: -21px;"">Python</a>
+            <div class="fundo"> 
+            <a style="width: 109px;">Java</a>
+            <a style="width: 109px;">JS</a>
+        </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // speed: 400,
+            // speed velocidade troca de slide
+            spaceBetween: 10,
+            //spaceBetween espaço entre os slides
+            slidesPerView: 3,
+            //numero de slides
+
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            }
+
+        });
+    </script>
+    <script src="index.js"></script>
 </body>
 
 </html>

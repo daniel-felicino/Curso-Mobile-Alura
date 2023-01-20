@@ -12,6 +12,11 @@
     background-color: var(--branco);
     display: flex;
     justify-content: space-between;
+    /* A justify-content propriedade alinha os itens do contêiner flexível 
+    quando os itens não usam todo o espaço disponível no eixo principal (horizontalmente).
+    Space-between:
+    separa os container da do mesmo display por exemplo tenho 2 div com conteudos 
+    cada div vai ficar de um lado do container se for mais de uma vai ser dividido proporcional  */
     align-items: center;
     position: relative;
 }
@@ -26,13 +31,7 @@
     padding: 1rem;
 
 }
-.lista__menu{
-    display: none;
-    position: absolute;
-    top: 100%;
-    width: 222px;
-}
-.container_botao:checked ~ .lista__menu{
+/*.container_botao:hover ~ .lista__menu{
 
     display: block;
     
@@ -41,14 +40,35 @@
      esse checked é uma pseudo classe. Ela detecta se está preenchida aquele input checkbox.
  E depois eu botei um acento ~, aquilo é chamado combinador CSS. 
  Um combinador CSS desse aqui, do acento ~, ele vai procurar um outro elemento que vem em seguida 
- daquele de antes, que tem aquela classe que eu botei depois. */
-} 
-#menu{
-    display: none;
+ daquele de antes, que tem aquela classe que eu botei depois. 
+ } */ 
+.lista__menu{
+    position: absolute;
+    top: 100%;
+    width: 222px;
+    margin-left: -100%;
+    transition-duration: 2s;
+    position: absolute;
+    top: 100%;
+    width: 222px;
 }
+
+#menu{
+   border: none;
+   
+}
+
+.aparecerMenu{
+    margin-left: 0;
+
+    transition-duration: 1s;
+}
+
 .lista__menu__titulo{
+
 text-transform: uppercase;
     color: var(--laranja);
+    font-weight: 700;
 }
 .lista__menu__item{
     text-transform: uppercase;
@@ -58,5 +78,5 @@ text-transform: uppercase;
 .lista__menu__titulo,.lista__menu__item{
 
     padding: 1rem;
-    background-color: var(--branco);
+    background-color: #efefef;
 }
