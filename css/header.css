@@ -1,35 +1,29 @@
-.cabecalho_menu_hamburguer{
-
-    width: 24px;
-    height: 24px;
-    background-image: url("../img/Menu.svg");
-    background-repeat: no-repeat;
-    background-position:center ;
-    display: inline-block;
+.cabecalho_menu_hamburguer {
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/Menu.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
 }
-.cabecalho{
-
-    background-color: var(--branco);
-    display: flex;
-    justify-content: space-between;
-    /* A justify-content propriedade alinha os itens do contêiner flexível 
+.cabecalho {
+  background-color: var(--branco);
+  display: flex;
+  justify-content: space-between;
+  /* A justify-content propriedade alinha os itens do contêiner flexível 
     quando os itens não usam todo o espaço disponível no eixo principal (horizontalmente).
     Space-between:
     separa os container da do mesmo display por exemplo tenho 2 div com conteudos 
     cada div vai ficar de um lado do container se for mais de uma vai ser dividido proporcional  */
-    align-items: center;
-    position: relative;
+  align-items: center;
+  position: relative;
 }
-.container{
-
-    display: flex;
-    align-items: center;
-
+.container {
+  display: flex;
+  align-items: center;
 }
-.containerImg{
-
-    padding: 1rem;
-
+.containerImg {
+  padding: 1rem;
 }
 /*.container_botao:hover ~ .lista__menu{
 
@@ -41,42 +35,64 @@
  E depois eu botei um acento ~, aquilo é chamado combinador CSS. 
  Um combinador CSS desse aqui, do acento ~, ele vai procurar um outro elemento que vem em seguida 
  daquele de antes, que tem aquela classe que eu botei depois. 
- } */ 
-.lista__menu{
-    position: absolute;
-    top: 100%;
-    width: 222px;
-    margin-left: -100%;
-    transition-duration: 2s;
-    position: absolute;
-    top: 100%;
-    width: 222px;
+ } */
+.lista__menu {
+  position: absolute;
+  top: 100%;
+  width: 222px;
+  margin-left: -100%;
+  transition-duration: 2s;
+  position: absolute;
+  top: 100%;
+  width: 222px;
 }
 
-#menu{
-   border: none;
-   
+#menu {
+  border: none;
 }
 
-.aparecerMenu{
-    margin-left: 0;
+.aparecerMenu {
+  margin-left: 0;
 
-    transition-duration: 1s;
+  transition-duration: 1s;
 }
 
-.lista__menu__titulo{
+.lista__menu__titulo {
+  text-transform: uppercase;
+  color: var(--laranja);
+  font-weight: 700;
+}
+.lista__menu__item {
+  text-transform: uppercase;
 
-text-transform: uppercase;
-    color: var(--laranja);
+  color: var(--azul);
+}
+.lista__menu__titulo,
+.lista__menu__item {
+  padding: 1rem;
+  background-color: #efefef;
+}
+.containerTitulo {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .cabecalho_menu_hamburguer {
+    display: none;
+  }
+  .containerTitulo,
+  .containerTituloNegrito {
+    font-size: 30px;
+    font-family: var(--fonte-principal);
+  }
+  .containerTitulo {
+    display: block;
+
+    font-weight: 400;
+  }
+  .containerTituloNegrito {
     font-weight: 700;
-}
-.lista__menu__item{
-    text-transform: uppercase;
+  }
 
-    color: var(--azul);
-}
-.lista__menu__titulo,.lista__menu__item{
 
-    padding: 1rem;
-    background-color: #efefef;
+  
 }

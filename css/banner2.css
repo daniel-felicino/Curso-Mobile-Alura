@@ -1,6 +1,6 @@
 .banner2 {
   height: 295px;
-  width: 324px;
+  width: 357px;
   left: 24px;
   top: 344px;
   border-radius: 10px;
@@ -14,7 +14,7 @@
 .icones {
   display: grid;
   margin: 1em;
-  padding: 1em;
+  padding-top: 1em;
   grid-template-columns: 1fr 1fr;
 }
 
@@ -51,17 +51,19 @@
   background-color: var(--laranja);
   color: var(--branco);
   border: none;
-  width: 161px;
+  width: 150px;
   height: 48px;
   padding: 8px, 16px, 8px, 16px;
   /* gap: 10px; */
   margin-top: 8px;
 }
 .icones2 {
+  margin-right: 15px;
   display: grid;
   grid-template-rows: 1fr;
   align-items: center;
   justify-content: center;
+  padding-bottom: 25px;
 }
 .icones .links {
   grid-column: span 2;
@@ -99,10 +101,65 @@
   padding: 12px;
   gap: 10px;
 }
-.containerlinks .fundo{
+.containerlinks .fundo {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column: span 2;
   gap: 15px;
   margin-left: 82px;
 }
+input {
+  background-image: url(../img/Vector.png);
+  background-repeat: no-repeat;
+  background-position-x: 17px;
+  background-position-y: 6px;
+  background-size: 19px;
+  border-radius: 24px;
+  border: 1px solid #002f52;
+  width: 299px;
+  margin-top: 15px;
+  margin-left: 24px;
+  height: 26px;
+}
+input::placeholder {
+  color: #002f52;
+}
+#placeholder-text {
+  padding-left: 40px;
+}
+.rodape h2 {
+  color: #002f52;
+  font-family: var(--fonte-principal);
+  font-weight: 500;
+  margin-left: 24px;
+  padding-top: 15px;
+}
+.rodape p {
+  padding-top: 15px;
+
+  width: 381px;
+  color: #002f52;
+  font-family: var(--fonte-principal);
+  font-size: 16px;
+  font-weight: 300;
+  margin-left: 24px;
+}
+.rodape div {
+
+  font-family: var(--fonte-principal);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 24px;
+
+  margin-bottom: 15px;
+}
+
+#linha-vertical{
+
+  margin-left: 0;
+  width: 100%;
+  border: 1px solid #a9a9a9;
+  margin-top: 13px;
+}
+
