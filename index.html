@@ -43,10 +43,11 @@
             </ul>
             <img class="logo" src="img/Logo.svg" alt="logo alurabooks">
             <h1 class="containerTitulo"><b class="containerTituloNegrito">Alura</b>Books</h1>
-
-
-            
-            <ul class="lista__menu2" >Categorias
+        </div>
+        <ul class="opcoes">
+           <li class="opcoes-itens " id="categorias">Categorias</li>
+            <ul class="aparecerMenu2" id="listaMenu2">
+                
                 <li class="lista__menu__item">
                     <a href="#" class="lista__menu__link"></a>Programação
                 </li>
@@ -62,17 +63,15 @@
                 <li class="lista__menu__item">
                     <a href="#" class="lista__menu__link"></a>Design
                 </li>
-            </ul>
+            </ul> 
+            
+            <li class="opcoes-itens">FAVORITOS</li>
+            <li class="opcoes-itens">MINHA ESTANTE</li>
 
-            <ul class="lista__menu2" >FAVORITOS
-           
-            </ul>
-            <ul class="lista__menu2" >MINHA ESTANTE
-          
-            </ul>
-        </div>
+        </ul>
+
         <div class="container2">
-            <a href="#"> <img class="containerImg" src="img/Favoritos.svg" alt="Favoritos"></a>
+            <a href="#"> <img class="containerImgFavoritos" src="img/Favoritos.svg" alt="Favoritos"></a>
             <a href="#"><img class="containerImg" src="img/Compras.svg" alt="Compras"></a>
             <a href="#"><img class="containerImg" src="img/Usuario.svg" alt="Usuario"></a>
         </div>
@@ -175,28 +174,48 @@
         <p>
             Atualizações de e-books, novos livros, promoções e outros.
         </p>
-        <input id="placeholder-text" type="text" placeholder="Cadastre seu e-mail">
+        <input class="inputRodape" id="placeholder-text" type="text" placeholder="Cadastre seu e-mail">
         <div id="linha-vertical"></div>
         <div>Grupo Alura</div>
+
+        <section class="bannerfinal2">
+            <div class="containerlinks">
+                <a style="    width: 82px;">Android</a>
+                <a style=" width: 166px;">Marketing Digital</a>
+                <a style="    width: 61px;"> Agile</a>
+                <a style="width: 82px;"> Startups</a>
+                <a style="width: 143px;margin-left: 6px">HTML & CSS</a>
+                <a style="width: 65px;">Python</a>
+                <a style="width: 65px;margin-left: 73px"">Java</a>
+                <a>JS</a>
+                <style>
+                    .containerlinks {
+
+                        display: flex;
+                        flex-wrap: wrap;
+                    }
+                </style>
+            </div>
+        </section>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script>
-        const swiper = new Swiper('.swiper', {
-            // speed: 400,
-            // speed velocidade troca de slide
-            spaceBetween: 10,
-            //spaceBetween espaço entre os slides
-            slidesPerView: 3,
-            //numero de slides
+    <script src=" https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+                    <script>
+                        const swiper = new Swiper('.swiper', {
+                            // speed: 400,
+                            // speed velocidade troca de slide
+                            spaceBetween: 10,
+                            //spaceBetween espaço entre os slides
+                            slidesPerView: 3,
+                            //numero de slides
 
-            pagination: {
-                el: '.swiper-pagination',
-                type: 'bullets',
-            }
+                            pagination: {
+                                el: '.swiper-pagination',
+                                type: 'bullets',
+                            }
 
-        });
-    </script>
-    <script src="index.js"></script>
+                        });
+                    </script>
+                    <script src="index.js"></script>
 </body>
 
 </html>

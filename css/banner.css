@@ -35,3 +35,9 @@
   background-position-y: center;
   background-size: 19px;
 }
+@media screen and (min-width: 1024px) {
+  .banner-pesquisa {
+    width: 55%;}
+ 
+
+}
